@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management System</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        div {
+            display: inline-flex;
+        }
+        label {
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body style="background-image: url(basicroom.jpg); background-size: cover;">
+    <h3 id="textStyling" style="text-decoration: underline; font-weight: bold;" align='center'>Booking Page</h3>
+    <form action ='expense.html' id="formStyle" >
+        <div class="form-group">
+    <label>FirstName</label>:<input type='text' class="form-control" name='userfirst'/></div><br/>
+    <div class="form-group">
+    <label>LastName</label>:<input type='text' class="form-control" name='userLast'/></div><br/>
+    
+    <label>Gender</label>:
+    <div class="form-check">
+    <input type='radio' class="form-check-input" id='male' name='gender' value='male'>
+    <label for='male' class="form-check-label">Male</label></div>
+    <div class="form-check">
+    <input type='radio' class="form-check-input" id='female' name='gender' value='female'>
+    <label for='male' class="form-check-label">Female</label></div><br/>
+    
+    <div class="form-group">
+    <label for='City'>City:</label>
+    <select name='City' class="form-control" id='City'>
+    <option>--Select City--</option>
+    <option value='Delhi'>Delhi</option>
+    <option value='Mumbai'>Mumbai</option>
+    <option value='Mumbai'>Bangalore</option>
+    </select></div><br/>
+    
+    <div class="form-group">
+    <label for='type'>Type of room:</label>
+    <select name='type' class="form-control" id='type'>
+    <option>--Select type of room--</option>
+    <option value='One'>Basic</option>
+    <option value='Two'>Executive</option>
+    <option value='Three'>Premium</option>
+    </select></div><br/>
+    
+    
+    <label>Amenities</label>:
+    <div class="form-check">
+    <input type='checkbox' class="form-check-input" id='amenity1' name='amenity1' value='Breakfast'>
+    <label for='amenity1' class="form-check-label">Breakfast</label></div>
+    <div class="form-check">
+    <input type='checkbox' class="form-check-input" id='amenity2' name='amenity2' value='Balcony'>
+    <label for='amenity2' class="form-check-label">Balcony</label></div>
+    <div class="form-check">
+    <input type='checkbox' class="form-check-input" id='amenity3' name='amenity3' value='Jacuzzi'>
+    <label for='amenity3' class="form-check-label">Jacuzzi</label></div><br/>
+    
+    <label>No of rooms</label>:<input type="number"/><br/>
+    <label>From</label>:<input type="date"/><br/>
+    <label>To</label>:<input type="date"/>
+    <input type="submit" value="Book" class="btn btn-success"/>
+    <input type='reset' class="btn btn-secondary"/>
+    </form>
+    <nav align='center'>
+    <a href="dashboard.html">Back</a></nav>
+</body>
+</html>

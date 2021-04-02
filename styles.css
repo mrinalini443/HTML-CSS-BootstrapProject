@@ -1,0 +1,66 @@
+.container {
+
+height: 300px;
+padding-top: 50px;
+
+}
+
+#textStyling {
+
+    font-size: xx-large;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#backgStyles {
+background-image: url(login2.jpeg);
+background-size: cover;
+}
+
+#bordering {
+    border: solid 2px beige;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+#formStyle {
+    padding: 10px;
+    margin-left: 500px;
+    border: solid 2px beige;
+    border-radius: 20px;
+    width: 400px;
+   background-color: bisque;
+}
+
+@keyframes anim {
+    0% {transform: translateX(20px);}
+    50% {transform: translateX(60px);}
+    100% {transform: translateX(100px);}
+}
+
+#myAnim {
+    animation-name: anim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    color: burlywood;
+    margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+#dashBack {
+    background-image: url(logo.jpg);
+    background-size: 80%;
+    background-position-x: 125px;
+}
+
+#imgTextStyle {
+    text-align: center;
+    font-weight: 500;
+}
+
+#imgHeader {
+    text-decoration: underline;
+    margin-top: 20px;
+}
